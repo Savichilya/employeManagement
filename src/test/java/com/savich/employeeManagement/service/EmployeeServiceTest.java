@@ -1,9 +1,9 @@
-package com.savich.employeManagement.service;
+package com.savich.employeeManagement.service;
 
-import com.savich.employeManagement.dao.EmployeeDao;
-import com.savich.employeManagement.dto.EmployeeDto;
-import com.savich.employeManagement.entity.Employee;
-import com.savich.employeManagement.mapping.EmployeeMapper;
+import com.savich.employeeManagement.dao.EmployeeDao;
+import com.savich.employeeManagement.dto.EmployeeDto;
+import com.savich.employeeManagement.entity.Employee;
+import com.savich.employeeManagement.mapping.EmployeeMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -60,7 +60,7 @@ class EmployeeServiceTest {
 
         employeeService.updateEmployee(id, employeeDto);
 
-        verify(employeeDao).save(employeeMapper.mapToEmployee(employeeDto));
+        verify(employeeDao).save(employee);
     }
 
     @Test

@@ -1,7 +1,7 @@
-package com.savich.employeManagement.mapping;
+package com.savich.employeeManagement.mapping;
 
-import com.savich.employeManagement.dto.EmployeeDto;
-import com.savich.employeManagement.entity.Employee;
+import com.savich.employeeManagement.dto.EmployeeDto;
+import com.savich.employeeManagement.entity.Employee;
 import org.springframework.stereotype.Component;
 
 @Component

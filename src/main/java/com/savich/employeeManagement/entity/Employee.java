@@ -1,12 +1,31 @@
-package com.savich.employeManagement.dto;
+package com.savich.employeeManagement.entity;
 
-public class EmployeeDto {
+import javax.persistence.*;
+
+import static javax.persistence.GenerationType.IDENTITY;
+
+@Entity
+@Table(name = "employee")
+public class Employee {
+    private int employeeId;
     private String firstName;
     private String lastName;
     private int departmentId;
     private String jobTitle;
     private String gender;
 
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
+    @Column(name = "employee_id")
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    @Column(name = "first_name", length = 30, nullable = false)
     public String getFirstName() {
         return firstName;
     }
@@ -15,6 +34,7 @@ public class EmployeeDto {
         this.firstName = firstName;
     }
 
+    @Column(name = "last_name", length = 30, nullable = false)
     public String getLastName() {
         return lastName;
     }
@@ -23,6 +43,7 @@ public class EmployeeDto {
         this.lastName = lastName;
     }
 
+    @Column(name = "department_id")
     public int getDepartmentId() {
         return departmentId;
     }
@@ -31,6 +52,7 @@ public class EmployeeDto {
         this.departmentId = departmentId;
     }
 
+    @Column(name = "job_title", length = 20, nullable = false)
     public String getJobTitle() {
         return jobTitle;
     }
@@ -43,6 +65,7 @@ public class EmployeeDto {
         return gender;
     }
 
+    @Column(name = "gender", length = 1, nullable = false)
     public void setGender(String gender) {
         this.gender = gender;
     }

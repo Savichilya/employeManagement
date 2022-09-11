@@ -1,13 +1,13 @@
-package com.savich.employeManagement;
+package com.savich.employeeManagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmployeManagementApplication {
+public class EmployeeManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeManagementApplication.class, args);
+		SpringApplication.run(EmployeeManagementApplication.class, args);
 	}
 
 }

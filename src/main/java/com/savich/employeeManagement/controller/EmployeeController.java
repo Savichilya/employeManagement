@@ -1,14 +1,14 @@
-package com.savich.employeManagement.controller;
+package com.savich.employeeManagement.controller;
 
-import com.savich.employeManagement.dto.EmployeeDto;
-import com.savich.employeManagement.entity.Employee;
-import com.savich.employeManagement.service.EmployeeService;
+import com.savich.employeeManagement.dto.EmployeeDto;
+import com.savich.employeeManagement.entity.Employee;
+import com.savich.employeeManagement.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/employee")
+@RequestMapping("/employees")
 public class EmployeeController {
     private final EmployeeService employeeService;
 

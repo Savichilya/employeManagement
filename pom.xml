@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.savich</groupId>
-	<artifactId>employeManagement</artifactId>
+	<artifactId>employeeManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>employeManagement</name>
 	<description>Demo project for Spring Boot</description>
